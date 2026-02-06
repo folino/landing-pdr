@@ -38,7 +38,7 @@ export function Navigation() {
       <header
         className={`fixed left-0 right-0 top-0 z-50 transition-all duration-300 ${
           isScrolled
-            ? "bg-background/95 backdrop-blur-md shadow-sm"
+            ? "bg-[#efefef] shadow-sm"
             : "bg-transparent"
         }`}
       >
@@ -46,11 +46,11 @@ export function Navigation() {
           <a href="#" className="block">
             <img 
               src={isScrolled 
-                ? "/images/pdlr-logos-02.jpg" 
-                : "/images/pdlr-logos-0.png"
+                ? "/images/paseo-horizontal.png" 
+                : "/images/pdlr-logos-0-resize.png"
               }
               alt="Paseo de la Rotonda"
-              className="h-10 w-auto"
+              className={isScrolled ? "h-10 w-auto" : "h-auto w-[150px]"}
             />
           </a>
 
@@ -68,17 +68,6 @@ export function Navigation() {
               </button>
             ))}
           </div>
-
-          <Button
-            className={`hidden md:inline-flex font-sans text-xs uppercase tracking-wider ${
-              isScrolled
-                ? "bg-primary text-primary-foreground hover:bg-primary/90"
-                : "bg-background text-foreground hover:bg-background/90"
-            }`}
-            onClick={() => scrollToSection("#contacto")}
-          >
-            Invertir Ahora
-          </Button>
 
           {/* Mobile Menu Button */}
           <button
@@ -103,12 +92,7 @@ export function Navigation() {
                   {link.label}
                 </button>
               ))}
-              <Button
-                className="mt-4 w-full bg-primary text-primary-foreground font-sans text-xs uppercase tracking-wider"
-                onClick={() => scrollToSection("#contacto")}
-              >
-                Invertir Ahora
-              </Button>
+
             </div>
           </div>
         )}

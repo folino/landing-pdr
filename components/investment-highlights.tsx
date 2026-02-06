@@ -8,44 +8,41 @@ export function InvestmentHighlights() {
           </p>
         </div>
 
-        {/* Main figures - two columns */}
-        <div className="flex flex-col items-center justify-center gap-12 md:flex-row md:gap-24 lg:gap-32">
-          {/* Paquete Accionario Total */}
-          <div className="text-center">
-            <div className="mb-2 font-serif text-5xl font-medium text-[#C4956A] md:text-6xl lg:text-7xl">
-              U$S 6.500.000
+        {/* Main figures - two columns, top-aligned */}
+        <div className="flex flex-col items-start justify-center gap-12 md:flex-row md:gap-0">
+          {/* Tasa de retorno */}
+          <div className="flex flex-1 flex-col items-center text-center">
+            <div className="mb-3 font-serif text-5xl font-medium text-[#C4956A] md:text-6xl lg:text-7xl">
+              8%
             </div>
-            <div className="font-sans text-sm uppercase tracking-[0.15em] text-white/80">
-              Paquete Accionario Total
+            <div className="mx-auto font-sans text-sm uppercase leading-relaxed tracking-[0.12em] text-white/80">
+              Tasa mínima de retorno proyectada
+            </div>
+            <div className="mt-1 font-sans text-xs tracking-wider text-white/50">
+              (después de impuestos)
             </div>
           </div>
 
           {/* Divider */}
-          <div className="hidden h-24 w-px bg-white/20 md:block" />
-          <div className="h-px w-24 bg-white/20 md:hidden" />
+          <div className="hidden self-stretch border-l border-white/20 md:block" />
+          <div className="h-px w-24 self-center bg-white/20 md:hidden" />
 
           {/* Ingreso Mínimo */}
-          <div className="text-center">
-            <div className="mb-2 font-serif text-5xl font-medium text-[#C4956A] md:text-6xl lg:text-7xl">
-              U$S 150.000
+          <div className="flex flex-1 flex-col items-center text-center">
+            <div className="mb-3 font-serif text-5xl font-medium text-[#C4956A] md:text-6xl lg:text-7xl">
+              U$S 50.000
             </div>
-            <div className="font-sans text-sm uppercase tracking-[0.15em] text-white/80">
+            <div className="font-sans text-sm uppercase tracking-[0.12em] text-white/80">
               Ingreso Mínimo
             </div>
           </div>
         </div>
 
-        {/* Horizontal separator */}
-        <div className="mx-auto my-12 h-px w-48 bg-white/20 md:my-16 md:w-64" />
-
-        {/* Tasa de Retorno - secondary */}
-        <div className="text-center">
-          <div className="mb-1 font-serif text-3xl font-medium text-[#C4956A]/80 md:text-4xl">
-            6%
-          </div>
-          <div className="font-sans text-xs uppercase tracking-[0.15em] text-white/60">
-            Tasa de Retorno Proyectada
-          </div>
+        {/* Highlight message */}
+        <div className="mx-auto mt-16 max-w-3xl border-t border-white/15 pt-12 md:mt-20 md:pt-14">
+          <p className="text-center font-serif text-lg leading-relaxed text-white/90 md:text-xl lg:text-2xl text-pretty">
+            Su inversión lo convierte en <span className="font-semibold text-[#C4956A]">accionista del proyecto</span>, su participación impacta en la rentabilidad general del Paseo de la Rotonda. Una <span className="font-semibold text-[#C4956A]">oportunidad superadora </span>, a la inversión tradicional en m{"²"}.
+          </p>
         </div>
       </div>
     </section>

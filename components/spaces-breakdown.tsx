@@ -6,7 +6,7 @@ const spaces = [
   {
     icon: Building2,
     name: "Locales Comerciales",
-    area: "998 m²",
+    area: "998 m\u00B2",
     percentage: 51,
     status: "Mayoría alquilados",
     color: "bg-accent",
@@ -14,7 +14,7 @@ const spaces = [
   {
     icon: Dumbbell,
     name: "Fitness Center",
-    area: "135 m²",
+    area: "135 m\u00B2",
     percentage: 7,
     status: "Con vestuarios",
     color: "bg-primary",
@@ -22,15 +22,15 @@ const spaces = [
   {
     icon: UtensilsCrossed,
     name: "Restaurante",
-    area: "333 m²",
+    area: "333 m\u00B2",
     percentage: 17,
-    status: "Incluye terraza 42m²",
+    status: "Incluye terraza 42m\u00B2",
     color: "bg-accent/80",
   },
   {
     icon: Coffee,
     name: "Cafetería / Heladería",
-    area: "104 m²",
+    area: "104 m\u00B2",
     percentage: 5,
     status: "Disponible",
     color: "bg-primary/80",
@@ -38,7 +38,7 @@ const spaces = [
   {
     icon: Bath,
     name: "Baños",
-    area: "85 m²",
+    area: "85 m\u00B2",
     percentage: 4,
     status: "Comunes",
     color: "bg-muted-foreground/60",
@@ -46,7 +46,7 @@ const spaces = [
   {
     icon: Wrench,
     name: "Servicios y Operación",
-    area: "321 m²",
+    area: "321 m\u00B2",
     percentage: 16,
     status: "Áreas técnicas",
     color: "bg-muted-foreground/40",
@@ -62,11 +62,11 @@ export function SpacesBreakdown() {
             Distribución
           </p>
           <h2 className="mb-4 font-serif text-3xl font-medium text-foreground md:text-4xl lg:text-5xl text-balance">
-            Espacios del Desarrollo
+            Un Mix de Servicios que responden a las necesidades de Tandil
           </h2>
           <p className="mx-auto max-w-2xl font-sans text-lg text-muted-foreground text-pretty">
-            Un total de 1.976 m² cubiertos más 1.065 m² semicubiertos, 
-            distribuidos estratégicamente para maximizar la rentabilidad.
+            Un total de 1.976 m{"²"} cubiertos m{"á"}s 1.065 m{"²"} semicubiertos, 
+            distribuidos estrat{"é"}gicamente para maximizar la rentabilidad.
           </p>
         </div>
 
@@ -117,18 +117,18 @@ export function SpacesBreakdown() {
         <div className="mt-12 grid gap-6 md:grid-cols-2">
           <div className="rounded-lg border border-border bg-card p-6">
             <div className="font-sans text-sm uppercase tracking-wider text-muted-foreground">
-              Total m² Cubiertos
+              Total m{"²"} Cubiertos
             </div>
             <div className="mt-2 font-serif text-4xl font-medium text-foreground">
-              1.976 m²
+              1.976 m{"²"}
             </div>
           </div>
           <div className="rounded-lg border border-border bg-card p-6">
             <div className="font-sans text-sm uppercase tracking-wider text-muted-foreground">
-              Total m² Semicubiertos
+              Total m{"²"} Semicubiertos
             </div>
             <div className="mt-2 font-serif text-4xl font-medium text-foreground">
-              1.065 m²
+              1.065 m{"²"}
             </div>
           </div>
         </div>

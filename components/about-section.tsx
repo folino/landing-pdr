@@ -1,13 +1,12 @@
 import { CheckCircle2 } from "lucide-react"
 
 const benefits = [
-  "Ubicación estratégica en Av. Don Bosco, Tandil",
-  "Alto porcentaje de espacios ya alquilados",
-  "Diversificación de inquilinos comerciales",
-  "Gestión profesional del desarrollo",
-  "Transparencia en la información financiera",
-  "Potencial de valorización a largo plazo",
-]
+ "Ubicación estratégica en Av. Don Bosco, Tandil",
+ "Versatilidad de espacios para marcas y actividades monetizables",
+ "Detalles que construyen una experiencia única: aroma propio de desarrollo local, sistema de recolección de agua de lluvia, diseño de espacios comunes orientados al - bienestar, recorrido 100% accesible.",
+ "Gestión profesional del desarrollo detrás de cada decisión",
+ "Transparencia en la información financiera",
+ "Potencial de valorización a largo plazo"];
 
 export function AboutSection() {
   return (
@@ -19,14 +18,10 @@ export function AboutSection() {
               El Proyecto
             </p>
             <h2 className="mb-6 font-serif text-3xl font-medium text-foreground md:text-4xl lg:text-5xl text-balance">
-              Un desarrollo comercial de primer nivel
+              Un desarrollo único y de infinitas posibilidades.
             </h2>
             <p className="mb-8 font-sans text-lg leading-relaxed text-muted-foreground text-pretty">
-              Paseo de la Rotonda representa una oportunidad única de inversión 
-              en un complejo comercial estratégicamente ubicado en Tandil, 
-              Provincia de Buenos Aires. Con más de 1.976 m² cubiertos y una 
-              diversidad de espacios comerciales, el proyecto ofrece una 
-              inversión sólida con retornos proyectados atractivos.
+              Paseo de la Rotonda es un proyecto que viene a transformar la experiencia comercial y social de Tandil. Su diseño arquitectónico respeta el equilibrio con el entorno natural y ofrece una atmósfera atractiva para locales y turistas. Es un punto de encuentro para conectarse y disfrutar de compras, naturaleza y actividades sociales.
             </p>
             <p className="font-sans text-lg leading-relaxed text-muted-foreground text-pretty">
               El desarrollo cuenta con locales comerciales, un fitness center 
@@ -38,7 +33,7 @@ export function AboutSection() {
 
           <div className="flex flex-col justify-center">
             <h3 className="mb-6 font-serif text-xl font-medium text-foreground">
-              Beneficios clave para inversores
+             Características diferenciales
             </h3>
             <ul className="space-y-4">
               {benefits.map((benefit, index) => (
